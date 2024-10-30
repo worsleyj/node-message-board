@@ -3,6 +3,10 @@
     <title>Message Board</title>
   </head>
   <body>
-    <p>test</p>
+    <h1>Messages</h1>
+    <ul>
+      <% messages.forEach((message) => { %> <%- include('message', {message:
+      message}) %> <% }); %>
+    </ul>
   </body>
 </html>
